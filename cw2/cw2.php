@@ -38,6 +38,9 @@
   $long_text = 'ala ma kotka i ma tez jezyka';
   $find = 'ma';
   echo stripos($long_text, $find).'<br>';
+  $dane = explode(' ',$long_text );
+  var_dump($dane);
+  echo '<br>'.strtoupper($long_text);
 ?>
 </body>
 </html>
