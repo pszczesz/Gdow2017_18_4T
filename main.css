@@ -1,0 +1,31 @@
+
+div#wrapper{
+    
+}
+h1{
+    margin: auto;
+    text-align: center;
+    border-bottom: solid 2px brown;
+    color: brown;
+}
+div#menu{
+    
+}
+div#menu ul{
+    list-style: none;
+}
+div#menu ul li a{
+    text-decoration: none;
+    display: inline-block;
+    border: solid thin brown;
+    background-color: #ff9999;
+    color: brown;
+    margin: 0;
+    padding: 20px;
+    width: 400px;
+    
+}
+div#menu ul li a:hover{
+    background-color: brown;
+    color: #ff9999;
+}
