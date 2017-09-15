@@ -34,12 +34,14 @@
         ?>
         <h3>Pętla do ...while</h3>
         <?php
-        $liczba = 0;        
+        $liczba = 0; 
+        $licznik=0;
         do{
             $liczba = rand(0, 20);
+            if($liczba!=0) $licznik++;
             echo $liczba. ' ';            
         }while($liczba!=0);
-        
+        echo "<br>Ilość wylosowanych liczb: {$licznik}\n";
         ?>
     </body>
 </html>
