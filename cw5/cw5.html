@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <style>
+            label{display: inline-block; width: 200px; text-align: right}
+            div.line{margin: 10px;}
+            input.zaint{margin-left: 210px;}
+            input#zat{width: 150px; padding: 5px;}
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Dane Kandydata</h1>
+            <form action="wynik.php" method="post">
+                <fieldset>
+                    <legend>Wprowadź dane</legend>
+                    <div class="line">
+                        <label>Imię: </label>
+                        <input type="text" name="imie"/>
+                    </div>
+                    <div class="line">
+                        <label>Nazwisko: </label>
+                        <input type="text" name="nazwisko"/>
+                    </div>
+                     <div class="line">
+                        <label>Klasa: </label>
+                        <select  name="klasa">
+                            <option value="1A">1A</option>
+                            <option value="1B">1B</option>
+                            <option value="1C">1C</option>
+                            <option value="1T">1T</option>
+                            <option value="1Z">1Z</option>
+                        </select>
+                    </div>
+                    <div class="line">
+                        <label>Płeć:</label>
+                        Kobieta <input type="radio" name="plec" value="K" checked=""> 
+                       Mężczyzna  <input type="radio" name="plec" value="M">
+                    </div>
+                    <div class="line">
+                        <label>Zainteresowania:</label><br>
+                        <input class="zaint" type="checkbox" value="Muzyka" name="zaint[]"/>Muzyka<br>
+                        <input class="zaint" type="checkbox" value="Sport" name="zaint[]"/>Sport<br>
+                        <input class="zaint" type="checkbox" value="Kino" name="zaint[]"/>Kino<br>
+                        <input class="zaint" type="checkbox" value="Taniec" name="zaint[]"/>Taniec<br>
+                        <input class="zaint" type="checkbox" value="Nic" name="zaint[]"/>Nic<br>
+                    </div>
+                    <div class="line">
+                        <label></label>
+                        <input type="submit" value="Zatwierdź" id="zat"/>
+                    </div>
+                </fieldset>  
+            </form>
+        </div>
+    </body>
+</html>
