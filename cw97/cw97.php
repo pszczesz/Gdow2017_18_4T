@@ -9,7 +9,7 @@
         <?php
         function GenerList($ile){
             $html = '<ol>';
-            for($i=1;$i<=$ile;$i++){
+            for($i=0;$i<$ile;$i++){
                 $html .= "<li>Element listy</li>\n";
             }
             return $html . "</ol>";
