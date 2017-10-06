@@ -1,0 +1,59 @@
+#wrapper{
+    margin: auto;
+    height: 700px;
+    width: 1000px;
+    text-align: center;
+}
+#banner{
+    margin: 0;
+    text-align: center;
+    font-size: 4em;
+    
+}
+#banner a{
+    padding: 60px;
+    text-decoration: none;
+    color: #660000;
+    background-color: #ff9999;
+    display: block;
+    width: 996px;
+    height: 120px;
+}
+#lewy{
+    margin: 0;
+    float: left;
+    width: 250px;
+}
+div#lewy ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+div#lewy ul li{
+    margin: 0;
+    padding: 0;
+}
+div#lewy ul li a{
+    text-decoration: none;
+    display: inline-block;
+    border: solid thin brown;
+    background-color: #ffcccc;
+    color: brown;
+    margin: 0;
+    padding: 20px;
+    width: 200px;
+    
+}
+div#lewy ul li a:hover{
+    background-color: brown;
+    color: #ff9999;
+}
+div#content{
+    float: left;
+    width: 650px;
+    margin: 0;
+    
+}
+div#footer{
+    clear: both;
+}
