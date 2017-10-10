@@ -32,3 +32,10 @@ function WorkersToTable(array $dane){
     $html .= "</table>\n";
     return $html;
 }
+function AddRowToFile($tekst,$filename){    
+        $file = fopen($filename, 'a');
+        if($file){
+            fwrite($file, $tekst);
+            fclose($file);
+        }    
+}

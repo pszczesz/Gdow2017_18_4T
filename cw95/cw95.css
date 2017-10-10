@@ -53,6 +53,7 @@ div#content{
     width: 650px;
     margin: 0;
     margin-left: 20px;
+    margin-top: 10px;
     text-align: left;
 }
 div#footer{
@@ -79,4 +80,27 @@ th,td{
 table.workers tr:hover td{
      background-color: #660000;
     color: #ffcccc;
+}
+div.line{
+    margin: 10px;
+}
+label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+span.error{
+    color: red;
+}
+input[type=submit]{
+    background-color: #330000;
+    color: #ffcccc;
+    padding: 10px;
+    width: 170px;
+    border: solid #ffcccc 2px;
+}
+form#dodaj{
+    background-color: #ffcccc;
+    padding: 20px;
+    color: #330000;
 }
