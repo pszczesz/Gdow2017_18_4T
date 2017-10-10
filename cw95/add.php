@@ -8,6 +8,9 @@ if(isset($_POST['imie'])){
     if(trim($imie)!='' && trim($nazwisko)!='' && $pensja>=0){
         $line = $imie.' '.$nazwisko.' '.$pensja.PHP_EOL;
         AddRowToFile($line,'dane.txt');
+        header('Location: cw95.php');
+        return;
     }
+    header('Location: addNewWorker.php');
 }
 

@@ -23,6 +23,7 @@
                 <?php
                 require_once 'functions.php';
                 $workers = getAll("dane.txt");
+               // DanePre($workers);
                 echo WorkersToTable($workers);
                 ?>
             </div>
