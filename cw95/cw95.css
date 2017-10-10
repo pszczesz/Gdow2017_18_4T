@@ -17,7 +17,7 @@
     background-color: #ff9999;
     display: block;
     width: 996px;
-    height: 120px;
+    height: 80px;
 }
 #lewy{
     margin: 0;
@@ -52,8 +52,31 @@ div#content{
     float: left;
     width: 650px;
     margin: 0;
-    
+    margin-left: 20px;
+    text-align: left;
 }
 div#footer{
     clear: both;
+}
+
+table.workers{
+    border-collapse: collapse;
+    margin: auto;
+    
+}
+table.workers tr th{
+    background-color: #660000;
+    color: #ffcccc;
+}
+table.workers tr td{
+    background-color: #ffcccc;
+    color: #660000;
+}
+th,td{
+    padding: 10px;
+    border: solid 1px #330000;
+}
+table.workers tr:hover td{
+     background-color: #660000;
+    color: #ffcccc;
 }

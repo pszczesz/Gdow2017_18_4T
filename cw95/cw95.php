@@ -19,10 +19,11 @@
                 </ul>
             </div>
             <div id="content">
-                zawartość strony
+                
                 <?php
                 require_once 'functions.php';
-                var_dump(getAll('dane.txt'));
+                $workers = getAll("dane.txt");
+                echo WorkersToTable($workers);
                 ?>
             </div>
             <div id="footer">Strona firmowa 2017</div>
