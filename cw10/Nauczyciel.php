@@ -9,7 +9,7 @@ class Nauczyciel extends Czlowiek{
     public function __toString() {
         $html = parent::__toString();
         $lista = implode(', ', $this->przedmioty);
-        $html .= "<div>Nauczane przedmioty: {$lista}</div>\n";
+        $html .= "<div>Nauczane przedmioty: <span class='wyr'>{$lista}</span></div>\n";
         return $html;
     }
 }
