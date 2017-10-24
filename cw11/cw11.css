@@ -49,3 +49,17 @@ div#prawy{
 div#stopka{
     clear: both;
 }
+table{
+    border-collapse: collapse;
+    margin: 0;
+    margin-left: 20px;
+    text-align: left;
+}
+th{
+     background-color: #660000;
+     color: #ff9966;
+}
+td,th{
+    border: 1px #660000 solid;
+    padding: 5px;
+}
