@@ -1,0 +1,51 @@
+div#wrapper{
+    margin: 0;
+    text-align: center;
+    width: 1000px;
+   
+}
+div#baner a{
+    display: block;
+    text-decoration: none;
+    color: #ff9966;
+    height: 100px;
+    padding-top: 40px;
+    background-color: #660000;
+    margin: 0;
+}
+div#baner{
+    margin: 0;
+    width: 999px;lor: #ff9966;
+    font-size: 3em;
+    text-align: center;
+}
+div#lewy{
+    float: left;
+    border: solid thin #ff6600;
+    width: 200px;
+    margin: 0;
+    height: 300px;
+}
+div#lewy ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+div#lewy ul li a{
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+   text-decoration: none;
+   color: #ff6600;
+   font-size: 1.3em;
+}
+div#prawy{
+    margin: 0;
+    float: left;
+    width: 780px;
+    
+}
+div#stopka{
+    clear: both;
+}
