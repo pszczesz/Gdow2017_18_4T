@@ -15,7 +15,7 @@
                         <a href="cw11.php">Wszyscy pracownicy</a>
                     </li>
                     <li>
-                        <a href="cw11.php">Dodaj pracownika</a>
+                        <a href="addForm.php">Dodaj pracownika</a>
                     </li>
                      <li>
                         <a href="cw11.php">Wszystkie działy</a>
