@@ -28,6 +28,7 @@ function getAllWorkers() {
             $workers[] = $row;
         }
     }
+    $conn->close();
     return $workers;
 }
 
@@ -42,4 +43,36 @@ function WorkersToHtml(array $dane) {
                 . "<td>{$row['name']}</td>\n</tr>\n";
     }
     return $html."</table>\n";
+}
+function GetAllDepts(){
+    $conn = getConnection();
+    if($conn==NULL) return [];
+    $result =  $conn->query("SELECT * FROM depts");
+    $dane = [];
+    if($result){
+        while (($row=$result->fetch_assoc())!=false){
+            $dane[] = $row;
+        }
+    }
+    $conn->close();
+    return $dane;
+}
+function DeptsToSelect(array $dane){
+    $html = "<select name='depts'>\n";
+    foreach ($dane as $row) {
+        $html .= "<option value='{$row['id']}'>{$row['name']}</option>\n";
+    }
+    return $html.'</select>';
+}
+function AddToWorkers($imie,$nazwisko,$pensja,$depts){
+    $conn = getConnection();
+    if($conn==NULL) return FALSE;
+    $sqlInsert = "INSERT INTO workers(firstname,lastname,salary,dept_id) "
+            . "VALUES('{$imie}','{$nazwisko}',{$pensja},{$depts})";
+    $result = $conn->query($sqlInsert);
+    $conn->close();
+    return $result;
+}
+function DeptsToList(array $dane){
+    
 }

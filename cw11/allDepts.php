@@ -23,13 +23,11 @@
                 </ul>
             </div>
             <div id="prawy">
-                <pre>
-            <?php
-            require_once 'functions.php';
-            $dane = getAllWorkers();
-            echo WorkersToHtml($dane);
-            ?>
-                </pre>
+               <?php
+               require_once 'functions.php';
+               $dane = GetAllDepts();
+               
+               ?>
             </div>
             <div id="stopka">Zawartość stopki 2017</div>
         </div>

@@ -18,7 +18,7 @@
                         <a href="addForm.php">Dodaj pracownika</a>
                     </li>
                      <li>
-                        <a href="cw11.php">Wszystkie działy</a>
+                        <a href="allDepts.php">Wszystkie działy</a>
                     </li>
                 </ul>
             </div>
@@ -45,7 +45,11 @@
                         </div>
                         <div class="line">
                             <label>Stanowisko: </label>
-                            
+                            <?php
+                            require_once 'functions.php';
+                            $dane = GetAllDepts();
+                            echo DeptsToSelect($dane);
+                            ?>
                         </div>
                         <div class="line">
                             <label></label>
