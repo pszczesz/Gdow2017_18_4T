@@ -20,6 +20,9 @@
                      <li>
                         <a href="allDepts.php">Wszystkie działy</a>
                     </li>
+                     <li>
+                        <a href="addDept.html">Dodaj nowy dział</a>
+                    </li>
                 </ul>
             </div>
             <div id="prawy">

@@ -20,16 +20,19 @@
                      <li>
                         <a href="allDepts.php">Wszystkie działy</a>
                     </li>
+                     <li>
+                        <a href="addDept.html">Dodaj nowy dział</a>
+                    </li>
                 </ul>
             </div>
             <div id="prawy">
-                <pre>
+               
             <?php
             require_once 'functions.php';
             $dane = getAllWorkers();
             echo WorkersToHtml($dane);
             ?>
-                </pre>
+               
             </div>
             <div id="stopka">Zawartość stopki 2017</div>
         </div>

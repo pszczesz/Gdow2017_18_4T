@@ -81,3 +81,11 @@ function DeptsToList(array $dane){
     }
     return $html."</ul>\n";
 }
+function AddNewDepts($name,$desc){
+    $conn = getConnection();
+    if($conn==NULL)       { return false;}
+    $sql = "INSERT INTO depts(name, description) "
+            . "VALUES('{$name}','{$desc}')";
+    $result = $conn->query($sql);
+    return $result;
+}

@@ -20,10 +20,33 @@
                      <li>
                         <a href="allDepts.php">Wszystkie działy</a>
                     </li>
+                    <li>
+                        <a href="addDept.html">Dodaj nowy dział</a>
+                    </li>
                 </ul>
             </div>
             <div id="prawy">
-              tutaj formularz
+               <form action="addNewDept.php" method="post">
+                    <fieldset>
+                        <legend>
+                            Dodaj nowy dział
+                        </legend>
+                        <div class="line">
+                            <label>Nazwa działu: </label>
+                            <input type="text" name="name" id="imie"/>
+                            <span class="error"></span>
+                        </div>
+                        <div class="line">
+                            <label>Opis działu: </label>
+                            <textarea cols="40" rows="3" name="description" id="nazwisko"></textarea>
+                            <span class="error"></span>
+                        </div>                       
+                        <div class="line">
+                            <label></label>
+                            <input type="submit" value="Dodaj dział"/>                            
+                        </div>
+                    </fieldset>
+                </form>
             </div>
             <div id="stopka">Zawartość stopki 2017</div>
         </div>
