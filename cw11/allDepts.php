@@ -5,6 +5,13 @@
         <meta charset="UTF-8">
         <title></title>
         <link rel="stylesheet" href="cw11.css"/>
+        <style>
+            ul{
+                text-align: left;
+            }
+            span.wyr{font-weight: bold; color: #996600;}
+            div.link a{text-decoration: none; color: #996600;cursor: pointer;}
+        </style>
     </head>
     <body> 
         <div id="wrapper">
@@ -26,8 +33,9 @@
                <?php
                require_once 'functions.php';
                $dane = GetAllDepts();
-               
+               echo DeptsToList($dane);
                ?>
+                <div class="link"><a href="addDept.html">Dodaj nowy dział</a></div>
             </div>
             <div id="stopka">Zawartość stopki 2017</div>
         </div>

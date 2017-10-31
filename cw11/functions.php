@@ -74,5 +74,10 @@ function AddToWorkers($imie,$nazwisko,$pensja,$depts){
     return $result;
 }
 function DeptsToList(array $dane){
-    
+    $html = "<ul>\n";
+    foreach ($dane as $row) {
+        $html .= "<li><span class='wyr'>{$row['name']}</span> opis stanowiska: "
+        . "{$row['description']}</li>\n";
+    }
+    return $html."</ul>\n";
 }
