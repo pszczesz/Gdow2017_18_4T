@@ -91,3 +91,10 @@ function AddNewDepts($name,$desc){
     $result = $conn->query($sql);
     return $result;
 }
+function DeleteWorker($id){
+    $conn = getConnection();
+    if($conn==NULL){        return false;}
+    $sql = "DELETE FROM workers WHERE id={$id}";
+    $result = $conn->query($sql);
+    return $result;
+}
