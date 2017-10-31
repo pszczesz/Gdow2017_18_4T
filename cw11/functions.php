@@ -17,7 +17,7 @@ function getAllWorkers() {
         return [];
     }
     $workers = [];
-    $sqlQuery = "SELECT firstname,lastname,salary,depts.name FROM workers"
+    $sqlQuery = "SELECT workers.id,firstname,lastname,salary,depts.name FROM workers"
             . " inner join depts on workers.dept_id=depts.id order by lastname";
     $result = $conn->query($sqlQuery);
 //    echo "<pre>";
@@ -34,13 +34,15 @@ function getAllWorkers() {
 
 function WorkersToHtml(array $dane) {
     $html = "<table><tr><th>Imię</th><th>Nazwisko</th><th>Pensja</th>"
-            . "<th>Stanowisko</th></tr>\n";
+            . "<th>Stanowisko</th><th>Operacje</th></tr>\n";
     foreach ($dane as $row) {
         $html .= "<tr>\n"
                 . "<td>{$row['firstname']}</td>\n"
                 . "<td>{$row['lastname']}</td>\n"
                 . "<td>{$row['salary']}</td>\n"
-                . "<td>{$row['name']}</td>\n</tr>\n";
+                . "<td>{$row['name']}</td>\n"
+                . "<td><a href='deleteWorker.php?id={$row['id']}'>Usuń</a>"
+                . " <a href='updateWorker.php?id={$row['id']}'>Edytuj</a></td></tr>\n";
     }
     return $html."</table>\n";
 }
