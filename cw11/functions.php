@@ -59,10 +59,14 @@ function GetAllDepts(){
     $conn->close();
     return $dane;
 }
-function DeptsToSelect(array $dane){
+function DeptsToSelect(array $dane, $current=-1){
     $html = "<select name='depts'>\n";
+   // var_dump($current); 
     foreach ($dane as $row) {
-        $html .= "<option value='{$row['id']}'>{$row['name']}</option>\n";
+        $setCurrent = $row['id']==$current ? "selected='' ":"";
+      //  var_dump($setCurrent);
+      //  var_dump($row['id']);
+        $html .= "<option value='{$row['id']}' {$setCurrent}>{$row['name']}</option>\n";
     }
     return $html.'</select>';
 }
@@ -96,5 +100,28 @@ function DeleteWorker($id){
     if($conn==NULL){        return false;}
     $sql = "DELETE FROM workers WHERE id={$id}";
     $result = $conn->query($sql);
+    return $result;
+}
+function getWorkerById($id){
+    $conn = getConnection();
+    if($conn==NULL){ return[];}
+    $sql = "SELECT * FROM workers WHERE id={$id}";
+    $result = $conn->query($sql);
+   // print_r($result);
+    if($result){
+        $row = $result->fetch_assoc();
+        return $row;
+    }
+    return [];
+}
+function UpdateToWorkers($id,$imie,$nazwisko,$pensja,$depts){
+      $conn = getConnection();
+    if($conn==NULL) return FALSE;
+    $sqlInsert = "UPDATE workers SET firstname='{$imie}', "
+            . "lastname='{$nazwisko}', salary='{$pensja}',"
+            . " dept_id='{$depts}' WHERE id={$id}";
+    //echo $sqlInsert;        
+    $result = $conn->query($sqlInsert);
+    $conn->close();
     return $result;
 }
