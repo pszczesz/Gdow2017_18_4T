@@ -80,5 +80,6 @@
             </div>
             <div id="stopka">Zawartość stopki 2017</div>
         </div>
+        <script type="text/javascript" src="cw11.js"></script>
     </body>
 </html>
