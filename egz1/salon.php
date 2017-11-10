@@ -23,7 +23,7 @@
             <h3>PRZYPOMNIENIE O NASTĘPNEJ WIZYCIE</h3>
         </section>
         <section id="prawy">
-            <h3>USŁUGI</h3>
+            <h3>USŁUGI </h3>
         </section>
         <?php
         
