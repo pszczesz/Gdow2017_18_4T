@@ -15,13 +15,13 @@
                         <label>
                             Nazwa usługi: 
                         </label>
-                        <input type="text" name="nazwa"/>
+                        <input type="text" name="nazwa" id="nazwa"/>
                     </div>
                     <div class="line">
                         <label>
                             Cena usługi: 
                         </label>
-                        <input type="text" name="cena"/>
+                        <input type="text" name="cena" id="cena"/>
                     </div>
                     <div class="line">
                         <label></label>
@@ -31,28 +31,36 @@
             </form> 
         </div>
         <?php
-        if(isset($_POST['nazwa'])){
-            $conn = new mysqli("localhost","root","","salon_prob");
-            if($conn->connect_errno>0){
-                echo "Błąd: ".$conn->connect_error;
+        if (isset($_POST['nazwa'])) {
+            $conn = new mysqli("localhost", "root", "", "salon_prob");
+            if ($conn->connect_errno > 0) {
+                echo "Błąd: " . $conn->connect_error;
                 exit();
             }
             $nazwa = $_POST['nazwa'];
             $cena = floatval($_POST['cena']);
-            if(trim($nazwa)!='' && $cena>0){
+            if (trim($nazwa) != '' && $cena > 0) {
                 $sql = "INSERT INTO uslugi(nazwa,cena) values('{$nazwa}',{$cena})";
                 $result = $conn->query($sql);
-                if($result){
+                if ($result) {
                     echo "<p>Dodano nową usługę "
                     . "<a href='salon.php'>Powrót na stronę główną</a></p> ";
-                }else{
+                } else {
                     echo "<p>Błąd przy próbie dodanioa usługi!!!</p>";
                 }
             }
-        }else{
-            echo "<a href='dodaj.php'>Powrót do formularza</a>";
-        }
-         $conn->close();
+            $conn->close();
+        } 
+        //if(isset($conn)) $conn->close();
         ?>
+        <script type="text/javascript">
+            window.onload = function () {
+                console.log("fdgdg");
+                document.forms[0].onsubmit = function () {
+                    return false;
+                };
+            };
+
+        </script>
     </body>
 </html>
