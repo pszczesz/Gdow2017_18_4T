@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 #baner{
    background-color: rgb(30, 137, 157);
    color: white;
