@@ -1,7 +1,7 @@
 #lewy{
     float: left;
     width: 70%;
-   
+
 }
 #baner{
     height: 150px;
@@ -16,7 +16,7 @@
 #prawy{
     float: left;
     width: 30%;
-      color: #3300cc;
+    color: #3300cc;
 }
 #prawy ul li a{
     display: inline-block;
@@ -24,7 +24,7 @@
     color: #3300cc;
 }
 #stopka{
-     background-color: #3300cc;
+    background-color: #3300cc;
     clear: both;
     text-align: center;
     color: #ccccff;

@@ -9,7 +9,7 @@
     <body>
         <div>
             <div id="baner">
-                <h1>STRONA TESTOWA</h1>
+                 <a href="egz2.php"><h1>STRONA TESTOWA</h1></a>
             </div>
             <div id="lewy">
                 <div class="line">
@@ -79,6 +79,6 @@
             </div>
             <div id="stopka">Wykonane Adam Nowak 2017</div>
         </div>
-        
+        <script type="text/javascript" src="strona_testowa.js"></script>
     </body>
 </html>
