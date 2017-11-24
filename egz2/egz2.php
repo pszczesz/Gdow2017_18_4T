@@ -15,6 +15,12 @@
                 <div class="line">
                     <span class="info">Kolor tła</span>
                     <?php
+                    session_start();
+                    
+                    $_SESSION['nazwa']="sesja";
+                    $_SESSION['data']= date("d-m-Y");
+                    
+                    
                     $conn = new mysqli("localhost","root","","strona_testowa");
                     $conn->query("SET NAMES utf8");
                     $sql = "SELECT * FROM kolory";
@@ -55,6 +61,8 @@
                     }
                     echo "</select>";
                     $conn->close();
+                    echo 'Sesja: '. session_id();
+                    print_r($_SESSION);
                     ?>
                 </div>
                 <div>
