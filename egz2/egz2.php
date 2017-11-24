@@ -19,7 +19,7 @@
                     
                     $_SESSION['nazwa']="sesja";
                     $_SESSION['data']= date("d-m-Y");
-                    
+                    setcookie("ciastko", "wartość202");
                     
                     $conn = new mysqli("localhost","root","","strona_testowa");
                     $conn->query("SET NAMES utf8");
