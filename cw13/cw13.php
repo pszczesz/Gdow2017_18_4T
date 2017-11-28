@@ -37,13 +37,10 @@
             $login = trim($_POST['login']);
             $password = trim($_POST['password']);
             if($login=='' || $password==''){
-                echo "<p>Błąd danych!!</p>";
-                exit;
+                echo "<p>Błąd danych!!</p>";exit;                
             }
             $sql = "SELECT * FROM logins WHERE login like '{$login}'";
             $result = $conn->query($sql);
-            //print_r($result);
-            //echo "<p>{$result->num_rows}</p>";
             if($result->num_rows>0){
                 $row = $result->fetch_assoc();
                 if($row['password']==$password){
