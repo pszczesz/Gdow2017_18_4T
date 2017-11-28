@@ -1,0 +1,20 @@
+h1{
+    margin: auto;
+    border-bottom: solid 2px grey; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+div.line{
+    margin: 10px;    
+}
+label{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+}
+span.error{color: red;}
+input#zaloguj{
+    padding: 5px;
+    width: 140px;
+}
