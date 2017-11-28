@@ -1,0 +1,50 @@
+#lewy{
+    float: left;
+    width: 70%;
+
+}
+#baner{
+    height: 150px;
+    background-color: #3300cc;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+#lewy,#prawy{
+    height: 500px;
+}
+#prawy{
+    float: left;
+    width: 30%;
+    color: #3300cc;
+}
+#prawy ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #3300cc;
+}
+#stopka{
+    background-color: #3300cc;
+    clear: both;
+    text-align: center;
+    color: #ccccff;
+}
+h1{
+    color: #ccccff;
+}
+div.line{
+    margin: 15px;
+}
+span.info{
+    display:inline-block;
+    width: 200px;
+    text-align: right;
+}
+#prawy ul{
+    list-style: none;
+    font-size: 1.5em;
+}
+#prawy ul li{
+    text-align: right;
+    margin: 10px;
+}
