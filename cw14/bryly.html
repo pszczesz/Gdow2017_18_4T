@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Geometria</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cw14.css"/>
+    </head>
+    <body>
+         <div id="wrapper">
+        <div id="baner">
+            <a href="cw14.html">
+                <img src="geometria.png" alt="geometria"/>
+            </a>
+        </div>
+        <div id="menu">
+            <a href="cw14.html"><h3>FIGURY</h3></a>
+
+            <a href="bryly.html"><h3>BRYŁY</h3></a>
+        </div>
+        <div id="content">
+            <div class="line">
+                <input type="radio" value="prostopadloscian" name="bryla" checked=""/>
+                <span class="info"> Prostopadłościan </span>
+                a: <input type="text" id="pa"/>
+                b: <input type="text" id="pb"/>
+                h: <input type="text" id="ph"/>
+            </div>
+            <div class="line">
+                <input type="radio" value="walec" name="bryla"/>
+                <span class="info"> Walec </span>
+                r: <input type="text" id="wr"/>                 
+                h: <input type="text" id="wh"/>
+            </div>
+            <div class="line">
+                <input type="radio" value="graniastosłup" name="bryla"/>
+                <span class="info">  Graniastosłup </span>
+                a: <input type="text" id="ga"/>
+                b: <input type="text" id="gb"/>
+                h: <input type="text" id="gh"/>             
+            </div>
+            <input type="button" value="OBLICZ OBJĘTOŚĆ" id="liczObjetosc"/>
+            <div id="wynik"></div>
+        </div>
+         </div>
+    </body>
+</html>

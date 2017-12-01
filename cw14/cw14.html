@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Geometria</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cw14.css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+        <div id="baner">
+            <a href="cw14.html">
+                <img src="geometria.png" alt="geometria"/>
+            </a>
+        </div>
+        <div id="menu">
+            <a href="cw14.html"><h3>FIGURY</h3></a>
+
+            <a href="bryly.html"><h3>BRYŁY</h3></a>
+        </div>
+        <div id="content">
+            <div class="line">
+                <input type="radio" value="prostokat" name="figura" checked=""/>
+                 <span class="info"> Prostokąt </span>
+                a: <input type="text" id="pa"/>
+                b: <input type="text" id="pb"/>
+            </div>
+            <div class="line">
+                <input type="radio" value="trojkat" name="figura"/>
+                <span class="info"> Trójkąt </span>
+                a: <input type="text" id="ta"/>
+                h: <input type="text" id="th"/>
+            </div>
+            <div class="line">
+                <input type="radio" value="kolo" name="figura"/>
+                <span class="info">  Koło </span>
+                r: <input type="text" id="kr"/>               
+            </div>
+            <input type="button" value="OBLICZ POLE" id="liczPole"/>
+            <div id="wynik"></div>
+        </div>
+        </div>
+        <script type="text/javascript" src="cw14.js"></script>
+    </body>
+</html>

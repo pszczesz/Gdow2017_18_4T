@@ -1,0 +1,57 @@
+body{ background-color: #bed0ec;}
+#wrapper{
+    margin: auto;
+    text-align: center;
+    background-color: #bed0ec;
+    width: 800px;
+    height: 100%;
+}
+#baner{
+    margin: 0px;
+}
+img{margin: 0px;}
+#menu{
+    float: left;
+    width: 20%;
+    background-color:#2e5da3;
+    margin: 0;
+    text-align: right;
+    padding: 10px;
+}
+#menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+}
+div#content{
+    text-align: left;
+    float: left;
+}
+.line{
+    margin: 20px;
+}
+span.info{
+    display: inline-block;
+    text-align: right;
+    width: 120px;
+}
+input#liczPole,input#liczObjetosc{
+    width: 400px;
+    background-color: #2e5da3;
+    padding: 10px;
+    color: white;
+    font-size: 2em;
+    border: solid 1px black;
+    margin-left: 50px;
+}
+input[type="text"]{
+    width: 50px;
+}
+#wynik{
+    margin: 20px;
+    font-size: 2em;
+    color: #2e5da3;
+}
+
