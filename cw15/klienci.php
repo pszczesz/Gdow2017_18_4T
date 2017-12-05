@@ -40,10 +40,11 @@
                     $sql = "SELECT * FROM prezenty WHERE odbiorcaID={$id}";
                     $result = $conn->query($sql);
                     if($result){
-                        
+                        echo "<ul>";
                          while($row = $result->fetch_assoc()){
-                             echo "<p>{$row['nazwa']} {$row['cena']} zł {$row['opis']}</p>\n";
+                             echo "<li>{$row['nazwa']} {$row['cena']} zł {$row['opis']}</li>\n";
                          }
+                          echo "</ul>";
                     }
                    
                 }
