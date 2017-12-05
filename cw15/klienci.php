@@ -45,15 +45,12 @@
                              echo "<li>{$row['nazwa']} {$row['cena']} zł {$row['opis']}</li>\n";
                          }
                           echo "</ul>";
-                    }
-                   
+                    }                   
                 }
                 ?>
-                </div>
-                
+                </div>                
                 <?php
                 $conn = new mysqli("localhost", "root", "", "swieta2017");
-
                 //print_r($conn);
                 if ($conn->connect_errno > 0) {
                     echo "Błąd połączenia: {$conn->connect_error}";
