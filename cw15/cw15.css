@@ -1,0 +1,38 @@
+body{
+    background-color: #ffcccc;
+}
+#wrapper{
+    margin: auto;
+    text-align: center;
+    width: 800px;
+}
+#baner{margin: 0;}
+#menu{
+   margin: auto;   
+   background-color: #330000;
+   color: white;
+   width: 800px;
+}
+#baner a{margin: 0; padding: 0;}
+#banner img{margin: 0;}
+#menu ul{margin: 0; list-style: none; padding: 0;}
+#menu ul li{ display: inline-block;
+   
+    }
+#menu ul li a{
+    display: inline-block;
+    margin: 0;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+#content{
+    width: 800px;
+    margin: 0;
+    text-align: left;
+}
+#prezenty{
+    float: right;
+    width: 350px;
+}
