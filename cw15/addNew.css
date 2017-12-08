@@ -1,0 +1,30 @@
+form{
+    margin-top: 40px;
+    margin-left: 40px;    
+}
+div.line{
+    margin: 10px;
+}
+label{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 6px;
+}
+span.error{color: red;}
+input[type="submit"]{
+    padding: 6px;
+    background-color: #660000;
+    color: #ffcccc;
+    width: 150px;
+    border: solid thin black;
+    cursor: pointer;
+}
+input[type="text"]{
+    background-color: #fac6ba;
+    border: solid thin #660000;
+}
+fieldset{
+   border: solid thin #660000;
+}
+

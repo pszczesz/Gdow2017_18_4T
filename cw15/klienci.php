@@ -71,7 +71,9 @@
                 echo "</table>";
                 $conn->close();
                 ?>
-                
+                <div>
+                    <a href="dodajKlienta.php">Dodaj nowego klienta</a>
+                </div>
             </div>
 
         </div>
